@@ -1,4 +1,5 @@
 import NextflixCard from "@/src/components/NextflixCard";
+import ColorGenerator from "@/src/project/ColorGenerator";
 import ButtonComponent from "@/src/screens/ButtonComponent";
 import CounterNumber from "@/src/screens/CounterNumber";
 import CustomComponent from "@/src/screens/CustomeComponent";
@@ -25,7 +26,8 @@ const index = () => {
       {/* <ImageComponent /> */}
       {/* <ButtonComponent /> */}
       {/* <NextflixCard /> */}
-      <CounterNumber />
+      {/* <CounterNumber /> */}
+      <ColorGenerator />
     </View>
   );
 };

@@ -14,7 +14,9 @@ const CounterNumber = () => {
         <TouchableOpacity onPress={() => setCount(0)}>
           <Text style={styles.countStyle}>Reset</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => setCount(count - 10)}>
+        <TouchableOpacity
+          onPress={() => (count > 0 ? setCount(count - 10) : setCount(0))}
+        >
           <Text style={styles.countStyle}>- 10</Text>
         </TouchableOpacity>
       </View>
