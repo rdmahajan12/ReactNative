@@ -1,7 +1,47 @@
 import React from "react";
 import { View, Image, Text, StyleSheet, Button, Linking } from "react-native";
+import {
+  JosefinSans_100Thin,
+  JosefinSans_200ExtraLight,
+  JosefinSans_300Light,
+  JosefinSans_400Regular,
+  JosefinSans_500Medium,
+  JosefinSans_600SemiBold,
+  JosefinSans_700Bold,
+  JosefinSans_100Thin_Italic,
+  JosefinSans_200ExtraLight_Italic,
+  JosefinSans_300Light_Italic,
+  JosefinSans_400Regular_Italic,
+  JosefinSans_500Medium_Italic,
+  JosefinSans_600SemiBold_Italic,
+  JosefinSans_700Bold_Italic,
+} from "@expo-google-fonts/josefin-sans";
+
+import { useFonts } from "expo-font";
+import AppLoading from "expo-app-loading";
 
 const NextflixCard = () => {
+  const [fontLoad] = useFonts({
+    JosefinSans_100Thin,
+    JosefinSans_200ExtraLight,
+    JosefinSans_300Light,
+    JosefinSans_400Regular,
+    JosefinSans_500Medium,
+    JosefinSans_600SemiBold,
+    JosefinSans_700Bold,
+    JosefinSans_100Thin_Italic,
+    JosefinSans_200ExtraLight_Italic,
+    JosefinSans_300Light_Italic,
+    JosefinSans_400Regular_Italic,
+    JosefinSans_500Medium_Italic,
+    JosefinSans_600SemiBold_Italic,
+    JosefinSans_700Bold_Italic,
+  });
+
+  if (!fontLoad) {
+    return <AppLoading />;
+  }
+
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Netflix Card</Text>
@@ -43,6 +83,7 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 30,
     marginBottom: 20,
+    fontFamily: "JosefinSans_500Medium",
   },
   poster: {
     width: 250,
@@ -56,11 +97,13 @@ const styles = StyleSheet.create({
   poster_title: {
     fontSize: 20,
     marginBottom: 10,
+    fontFamily: "JosefinSans_400Regular",
   },
   poster_text: {
     color: "blue",
     paddingHorizontal: 20,
     marginBottom: 10,
+    fontFamily: "JosefinSans_300Light",
   },
 });
 

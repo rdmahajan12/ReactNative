@@ -1,5 +1,6 @@
 import NextflixCard from "@/src/components/NextflixCard";
 import ButtonComponent from "@/src/screens/ButtonComponent";
+import CounterNumber from "@/src/screens/CounterNumber";
 import CustomComponent from "@/src/screens/CustomeComponent";
 import FlatListComponent from "@/src/screens/FlatListComponent";
 import ImageComponent from "@/src/screens/ImageComponent";
@@ -23,7 +24,8 @@ const index = () => {
       {/* <FlatListComponent /> */}
       {/* <ImageComponent /> */}
       {/* <ButtonComponent /> */}
-      <NextflixCard />
+      {/* <NextflixCard /> */}
+      <CounterNumber />
     </View>
   );
 };
